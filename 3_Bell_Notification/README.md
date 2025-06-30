@@ -32,12 +32,12 @@ A sleek and interactive notification bell that increments its count on click. It
 1. Clone or download from the main repo:  
    `git clone https://github.com/Sankrityayana/HTML-CSS-JS-Projects.git`  
 2. Navigate to the project folder:  
-   `cd HTML-CSS-JS-Projects/2_Bell_Notification_Animation`  
+   `cd HTML-CSS-JS-Projects/3_Bell_Notification_Animation`  
 3. Open `index.html` in your browser.  
 4. Click the "Notify Me" button to trigger the animation and increase the badge count.
 
 ## Live Demo
-[View the live demo](https://sankrityayana.github.io/HTML-CSS-JS-Projects/1_Background_Animation_on_Hover/)
+[View the live demo](https://sankrityayana.github.io/HTML-CSS-JS-Projects/3_Bell_Notification/)
 
 ## Author
 Suraj Shanbhag – [GitHub Profile](https://github.com/Sankrityayana)
