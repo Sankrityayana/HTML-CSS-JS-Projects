@@ -13,11 +13,19 @@ body.onload = function generateCaptcha() {
         captcha += char.substring(randomIndex, randomIndex + 1);
     }
     document.getElementById("_generator").value = captcha
-    display.innerText = "Captcha generator";
+    display.innerText = "Captcha Generator";
 }
 
 submit.onclick = function checkInput() {
+    const input =  document.getElementById("_client-text").value;
 
+    if(input === "") {
+        display.innerText = "Please Enter the text Shown below";
+    } else if(input === captcha) {
+        display.innerText = "Captcha Matched";
+    } else {
+        display.innerText = "Captcha Not Matched";
+    }
 }
 
 refresh.onclick = function refreshCaptcha() {
@@ -25,7 +33,9 @@ refresh.onclick = function refreshCaptcha() {
     for(let i = 0; i < captcha.length; i++) {
         const randomChar = char[Math.floor(Math.random() * char.length)];
         newCaptcha += randomChar;
-        
     }
+    captcha = newCaptcha;
+    document.getElementById("_generator").value = captcha;
+    display.innerText = "Captcha Generator";
 }
 
