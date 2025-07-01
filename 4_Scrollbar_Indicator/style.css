@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.numbers {
+    color: black;
+    line-height: 10rem;
+    text-align: center;
+}
+
+span {
+    padding: 1rem;
+    background-color: lightblue;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+    display: inline-block;
+    transition: transform 0.2s;
+    width: 150px;
+}
+
+span:hover {
+    transform: scale(1.05);
+}
+
+.indicator {
+    background-color: aqua;
+    height: 20px;
+    width: 15%;
+    position: fixed;
+    top: 0px;
+}
